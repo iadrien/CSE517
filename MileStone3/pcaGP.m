@@ -1,7 +1,7 @@
-Data = csvread("trainData.csv",1,4);
-x = Data(:,3:18);
-trainingLabelM = Data(:,1);
-trainingLabelT = Data(:,2);
+%Data = csvread("trainData.csv",1,4);
+x = X(:,1:3);
+trainingLabelM = Y1;
+trainingLabelT = Y1;
 
 % CVMdl1 = fitrlinear(trainingInput,trainingLabelM,'Learner','leastsquares','KFold',10);
 % display(mean(trainingLabelM));
@@ -10,10 +10,10 @@ trainingLabelT = Data(:,2);
 % CVMdl2 = fitrlinear(trainingInput,trainingLabelT,'Learner','leastsquares','KFold',10);
 % display(mean(trainingLabelT));
 % display(CVMdl2.kfoldLoss);
-[row, column] = size(x);
-for i =1:column
-    x(:,i) = (x(:,i) - min(x(:,i)))/(max(x(:,i))-min(x(:,i))); 
-end
+% [row, column] = size(x);
+% for i =1:column
+%     x(:,i) = (x(:,i) - min(x(:,i)))/(max(x(:,i))-min(x(:,i))); 
+% end
 
 %% training with motor score as label
 %% training without cross validation
