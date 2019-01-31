@@ -25,3 +25,4 @@
 ## Downloaded from UCI database: http://archive.ics.uci.edu/ml/datasets/Parkinsons+Telemonitoring
 
 
+##### Homeworks contains various mathmatic proofs and equations
